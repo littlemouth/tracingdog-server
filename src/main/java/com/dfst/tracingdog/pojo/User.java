@@ -11,6 +11,7 @@ public class User extends BaseEntity<Integer> {
     private Integer id;
     private String username;
     private String password;
+    private String head;
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -37,5 +38,13 @@ public class User extends BaseEntity<Integer> {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHead() {
+        return head;
+    }
+
+    public void setHead(String head) {
+        this.head = head;
     }
 }

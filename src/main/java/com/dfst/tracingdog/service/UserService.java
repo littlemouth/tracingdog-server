@@ -20,4 +20,8 @@ public class UserService extends BaseService<User, Integer> {
     public void setRepository(CrudRepository repository) {
         this.repository = repository;
     }
+
+    public void add(User user) {
+        repository.save(user);
+    }
 }

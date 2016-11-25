@@ -15,7 +15,7 @@ import java.util.Date;
 
 @Controller
 @EnableAutoConfiguration
-@RequestMapping("/historylocation")
+@RequestMapping("/test")
 public class HistoryLocationController {
 
     @Resource(name="HistoryLocationService")
@@ -42,7 +42,7 @@ public class HistoryLocationController {
         return "success";
     }
 
-    @RequestMapping(value="/test", method = RequestMethod.GET)
+    @RequestMapping(value="/test", method = RequestMethod.POST)
     @ResponseBody
     public String test() {
         return "asdfasdf";
